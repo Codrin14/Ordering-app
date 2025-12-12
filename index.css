@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+body,header,nav,h2{
+    margin: 0;
+    font-family: "Bodoni Moda", serif;
+}
+body {
+    min-width: 400px;
+    font-family: "Roboto", sans-serif;
+} 
+header {
+    margin: 0;
+    background-image: url("/burger.jpg");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat;  
+    height: 140px;
+    position: relative;
+    padding-top: .9em;
+}
+
+nav {
+    position: absolute;
+    padding-left: .9em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+header h2{
+    margin-top: 1rem;
+    padding-top: .6em;
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    font-size: 30px;
+}
+header p{
+    text-decoration: none;
+    margin-top: 0;
+    word-spacing: 3px;
+    font-size: .65em;
+    color: #f0f0f0;
+}
+
+section {
+    margin:0 1.7em;
+}
+
+#productCard {
+    display: flex;
+    border-bottom: 2px solid lightgray;    
+    justify-content: space-between;
+}
+.product {
+    display: flex;
+    
+}
+#emoji {
+    justify-content: start;
+    align-self: center;  
+    font-size: 45px;
+    margin-right: none;
+}
+.description {
+    padding: .7em;
+    margin-left: 1.4em;
+}
+.description h2 {
+    margin-top: .5em;
+    margin-bottom: .2em;
+}
+.description p{
+    margin-top: 0;
+    font-size: .7em;
+    color: grey;
+    margin-bottom: .5em;
+}
+.description h3{
+    margin-top: .6em;
+}
+.add-btn {
+    align-self: center;
+    border: 2px solid #f0f0f0;
+     border-radius: 50%;
+    background-color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#order h2{
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    display: flex;
+    justify-content: center;
+}
+
+#product-order {   
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#product-order h3 {
+    margin: 0;
+    align-self: center;
+}
+
+#product-order div {
+    padding: 0;
+    display: flex;
+}
+
+#remove-btn {
+    cursor: pointer;
+    padding-top: .6em;
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 1em;
+}
+#product-order div h3 {
+    font-size: 1.5em;
+    font-family: "Bodoni Moda", serif;
+}
+
+#product-order div p {
+    font-size: 1.5em;
+}
+
+#total-price {
+    display: flex;
+    justify-content: space-between;
+}
+#total-price {
+    border-bottom: none;
+}
+#order-divider{
+    display: flex;
+    border-bottom: 2px solid grey;
+}
+#order-btn {
+    justify-content: center;
+    align-self: center;
+    background-color: #10B981;
+    color: #f0f0f0;
+    font-size: 1em;
+    border: none;
+    border-radius: 2em;
+    width: 100%;
+    height: 2em;
+    margin-bottom: 2em;
+}
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.overlay form {
+    background: white;
+    width: 100%;
+    max-width: 360px;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#payment {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 360px;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#payment h2{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.overlay form input {
+    margin-bottom: .9em;
+    width: 100%;
+    height: 2.5em;
+    border: 2px solid gainsboro;
+    border-radius: .3em;
+    padding-left: .6em;
+}
+
+#pay-btn {
+    background-color: #10B981;
+    color: #f0f0f0;
+    width: 100%;
+    height: 2.4em;
+    margin-top: .6em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+}
+
