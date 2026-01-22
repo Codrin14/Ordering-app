@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s02tj66",
-  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0ie/s09nn057ul/head",
+  "name": "Ordering app",
+  "description": "Ordering app where you can remove or add items in card",
   "scripts": {
     "start": "vite",
     "dev": "vite",
